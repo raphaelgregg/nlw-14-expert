@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fullstack</title>
+
+  <link rel="stylesheet" href="./styles/global.css">
+
+  <!-- Importado pelo CSS -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+
+  <script type="module" src="./js/questions.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Teste seus conhecimentos</h1>
+    
+    <div id="quiz"></div>
+    
+    <div id="hits">
+      <strong>Acertos</strong>
+      <span>0 de 10</span>
+    </div>
+    
+    <template>
+      <div class="quiz-item">
+        <h3>Pergunta 01</h3>
+        <dl>
+          <dt>
+            <input type="radio" name="item" value="0">
+            <span>Resposta A</span>
+          </dt>
+        </dl>
+      </div>
+    </template>
+  </main>
+</body>
+</html>
