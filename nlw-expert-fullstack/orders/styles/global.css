@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --slate-color-0: #FFFFFF;
+  --slate-color-50: #F8FAFC;
+  --slate-color-100: #F1F5F9;
+  --slate-color-200: #E2E8F0;
+  --slate-color-300: #CBD5E1;
+  --slate-color-400: #94A3B8;
+  --slate-color-500: #64748B;
+  --slate-color-600: #475569;
+  --slate-color-700: #334155;
+  --slate-color-800: #1E293B;
+  --slate-color-900: #0F172A;
+
+  --lime-color-400: #A3E635;
+
+}
+
+.dark {
+  --bg-color: var(--slate-color-900);
+  --text-color: var(--slate-color-400);
+  --title-color: var(--slate-color-0);
+  --subtitle-color: var(--slate-color-100);
+
+  --line-stroke-color: var(--slate-color-700);
+  --surface-color: var(--slate-color-800);
+  --surface-color-hover: rgb(255, 255, 255, 0.02);
+  --highlight-color: var(--lime-color-400);
+}
+
+html, body {
+  font-size: 1.6rem;
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.line {
+  width: 100%;
+  border-top: 1px solid var(--line-stroke-color);
+  margin: 2rem;
+}
+
+
+h1 {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 3.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  transition: opacity 0.5s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* HEADER */
+.title {
+  color: var(--title-color);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem 0;
+}
+
+header h4 {
+  margin-top: .8rem;
+}
+
+.bag-shopping {
+  position: relative;
+  padding: 1.2rem;
+
+  transition: opacity .3s;
+}
+
+.bag-shopping::before {
+  position: absolute;
+  content: '1';
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 20rem;
+  background: var(--lime-color-400);
+}
+
+.bag-shopping:hover {
+  opacity: 0.7;
+}
+
+/* MAIN */
+main {
+  display: grid;
+  gap: 3.2rem;
+  padding: 0 2rem 3.2rem;
+}
+nav ul {
+  display: flex;
+  gap: 1.2rem;
+  padding: 0 2rem;
+
+  overflow-y: scroll;
+  overflow: hidden;
+
+  border: 1px solid red;
+}
+li a {
+  padding: 1.2rem 1.6rem;
+  background-color: var(--surface-color);
+  border-radius: .6rem;
+}
