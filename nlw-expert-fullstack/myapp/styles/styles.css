@@ -36,6 +36,8 @@ main h2 {
 #quiz {
   display: grid;
   gap: 2.4rem;
+
+  counter-reset: quiz-item;
 }
 
 .quiz-item {
@@ -43,11 +45,34 @@ main h2 {
   border-radius: 0.6rem;
 
   background: var(--slate-color-700);
+
+  overflow: hidden;
 }
 
 .quiz-item h3 {
   padding: 1.6rem 2rem;
   background: var(--slate-color-800);
+
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.quiz-item h3::before {
+  counter-increment: quiz-item;
+  content: counter(quiz-item);
+
+  background-color: var(--slate-color-600);
+  width: 2.8rem;
+  height: 2.8rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
 }
 
 .quiz-item h3 span{
