@@ -49,13 +49,13 @@ html, body {
 
 body {
   max-width: 100vw;
-  /* border: 1px solid green; */
 }
 
 #app {
-  width: 33.5rem;
+  width: 100%;
+  min-width: 33.6rem;
   margin: 0 auto;
-  padding: 2rem 0 3.2rem;
+  padding: 2rem 2rem 3.2rem;
   /* border: 1px solid red; */
 }
 
@@ -92,7 +92,7 @@ a {
 }
 
 a:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 ul {
@@ -113,6 +113,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* border: 1px solid red; */
 }
 
 header h4 {
@@ -162,33 +163,61 @@ main {
 }
 
 nav {
-  /* border: 1px solid red; */
+  width: calc(100vw - 2rem);
 }
 
 nav ul {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
   display: flex;
   gap: 1.2rem;
-
+  padding: 2px;
 }
-ul li{
+
+nav ul::-webkit-scrollbar {
+  display: none;
+}
+
+li a {
+  display: inline-block;
   background-color: var(--surface-color);
   border-radius: .6rem;
   padding: 1.2rem 1.6rem;
 }
 
-a {
-  display: inline-block;
-  line-height: 0;
+li a:focus {
+  outline: 2px solid #A3E635;
 }
 
-/* SECTIOS CARDS */
-.section-list dl {
+/* SECTIONS PRODUCtS */
+#products {
+  width: 33.6rem;
+  height: calc(100vh - 22rem);
+  /* white-space: nowrap; */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  /* border: 1px solid red; */
+}
+
+#products::-webkit-scrollbar {
+  display: none;
+}
+
+.section-products + .section-products{
+  margin-top: 3.2rem;
+}
+
+.section-products dl {
   margin-top: 1.2rem;
   display: grid;
   gap: 1.6rem;
 }
 
-.section-list .card-item {
+.section-products .card-item {
   display: flex;
   gap: 1.2rem;
 }
@@ -214,4 +243,26 @@ a {
   line-height: 2rem;
   margin-top: 2px;
   overflow: hidden;
+}
+
+/* QUERIE */
+@media (min-width: 768px) {
+  #products {
+    width: calc(100vw - 6rem);
+    /* border: 1px solid red; */
+  }
+
+  .section-products dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+}
+
+@media (min-width: 1240px) {
+  .section-products dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
 }
