@@ -131,6 +131,43 @@ const MENU = [
   },
 ]
 
+const PEDIDO = [
+  {
+    title: "Pedido1",
+    data: [
+      {
+        id: "1",
+        title: "X-React",
+        price: 24.9,
+        description:
+          "Um hamburger tão bonito que me deu fome enquanto eu fazia esse layout para o projeto...",
+        cover: "./assets/images/products/cover/1.png",
+        thumbnail: "./assets/images/products/thumbnail/1.png",
+        ingredients: [
+          "Pão brioche;",
+          "2x carnes smash (blend da casa) de 80g;",
+          "Queijo cheddar;",
+          "Alface;",
+          "Tomate;",
+          "Picles;",
+          "Cebola;",
+          "Molho da casa;",
+        ],
+      },
+      {
+        id: "7",
+        title: "Hmmm, coquinha!",
+        price: 6.9,
+        cover: "./assets/images/products/cover/7.png",
+        thumbnail: "./assets/images/products/thumbnail/7.png",
+        description:
+          "Uma coca super gelada para acompanhar o seu super lanche...",
+        ingredients: [],
+      },
+    ],
+  },
+]
+
 const PRODUCTS = MENU.map((item) => item.data).flat()
 const CATEGORIES = MENU.map((item) => item.title)
 
@@ -139,7 +176,7 @@ const CATEGORIES = MENU.map((item) => item.title)
 
 // export { CATEGORIES, MENU, PRODUCTS, ProductProps };
 
-export { CATEGORIES, MENU, PRODUCTS };
+export { CATEGORIES, MENU, PEDIDO, PRODUCTS };
 
 
 
