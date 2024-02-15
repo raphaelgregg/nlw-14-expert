@@ -1,12 +1,15 @@
 @import url("./constants.css");
 
-
 #cart {
   width: 100%;
   min-width: 33.6rem;
   margin: 0 auto;
   padding: 2rem 2rem 3.2rem;
   /* border: 1px solid red; */
+}
+
+header h4 {
+  margin-top: .8rem;
 }
 
 .section-products + .section-products{

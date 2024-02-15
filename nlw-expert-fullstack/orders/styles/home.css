@@ -1,10 +1,6 @@
 @import url("./constants.css");
 
 /* HEADER */
-.title {
-  color: var(--title-color);
-}
-
 header {
   display: flex;
   align-items: center;

@@ -90,4 +90,8 @@ button {
   cursor: pointer;
 }
 
+.title {
+  color: var(--title-color);
+}
+
 @import url('./queries.css');
