@@ -1,0 +1,30 @@
+nav {
+  width: 100%;
+
+}
+
+nav ul {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  display: flex;
+  gap: 1.2rem;
+  padding: 2px;
+}
+
+nav ul::-webkit-scrollbar {
+  display: none;
+}
+
+li a {
+  display: inline-block;
+  background-color: var(--surface-color);
+  border-radius: .6rem;
+  padding: 1.2rem 1.6rem;
+}
+
+li a:focus {
+  outline: 2px solid #A3E635;
+}

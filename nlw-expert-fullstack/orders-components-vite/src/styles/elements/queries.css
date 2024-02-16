@@ -1,0 +1,21 @@
+/* QUERIE */
+@media (min-width: 768px) {
+  #products {
+    width: calc(100vw - 6rem);
+    /* border: 1px solid red; */
+  }
+
+  .section-products dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+}
+
+@media (min-width: 1240px) {
+  .section-products dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+}

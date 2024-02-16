@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Ordens - HTML CSS JS</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="module" src="./js/main.js" defer></script>
+</head>
+<body class="dark">
+  <div id="app" >
+    <header>
+      <div class="header-wrapper">
+        <img src="./assets/svg/logo.svg" alt="logo nlw expert">
+        <h4 class="title">Faça seu pedido</h4>
+      </div>
+
+      <div class="bag-shopping">
+        <img src="./assets/svg/shopping-bag.svg" alt="icone de bolsa" /> 
+      </div>
+    </header>
+    
+    <div class="line"></div>
+
+    <main>
+      <div id="categories"></div>
+      <template id="template-categories">
+        <nav>
+          <ul>
+            <li><a href="#">Lanche do dia</a></li>
+          </ul>
+        </nav>
+      </template>
+
+      <div id="products"></div>
+
+      <template id="template-products">
+        <div class="section-products">
+          <h4>Lanche do dia</h4>
+          
+          <dl>
+            <dt class="card-item">
+              <img src="./assets/images/products/thumbnail/1.png" alt="imagem de hamburguer">          
+              
+              <div class="card-info">
+                <p class="title">X-React</p>
+                <p>Um hambúrger tão bonito que me deu fome enquanto eu fazia esse layout para o projeto...</p>
+              </div>
+            </dt>
+          </dl>
+        </div>
+      </template>
+    </main>
+  </div>
+</body>
+</html>

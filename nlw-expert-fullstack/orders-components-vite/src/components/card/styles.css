@@ -1,0 +1,33 @@
+.section-products dl {
+  margin-top: 1.2rem;
+  display: grid;
+  gap: 1.6rem;
+}
+
+.section-products .card-item {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.card-item img {
+  width: 9.2rem;
+  height: 9.2rem;
+  border-radius: .6rem;
+}
+
+.card-info {
+  width: 23rem;
+  padding: 4px 0;
+}
+
+.card-info .title {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.card-info p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-top: 2px;
+  overflow: hidden;
+}
