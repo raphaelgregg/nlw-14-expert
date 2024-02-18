@@ -1,16 +1,13 @@
-import { Header } from '../../components/header/index.js';
 import { Category } from '../../components/category/index.js';
-import { SectionItem } from '../../components/sectionItem/index.js';
+import { Header } from '../../components/header/index.js';
+import { MenuList } from '../../components/menuList/index.js';
 
 import './styles.css';
 
 import { CATEGORIES, MENU } from '../../utils/data/products.js';
 
 
-export function Home() {
-  const showCategories = Category(CATEGORIES);
-  const showSectionItems = SectionItem(MENU);
-    
+export function Home() {  
   return `
     ${Header()}
     
@@ -19,7 +16,9 @@ export function Home() {
     <main>
       ${Category(CATEGORIES)}
 
-      ${SectionItem(MENU)}
+      <div class="products">
+      ${MenuList(MENU)}
+      </div>
     </main>
 
   `

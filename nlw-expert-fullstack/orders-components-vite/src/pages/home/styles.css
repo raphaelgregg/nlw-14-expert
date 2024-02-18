@@ -6,29 +6,35 @@
 
 /* MAIN */
 main {
-  display: grid;
-  gap: 3.2rem;
-
-  border: 1px solid green;
+  /* border: 1px solid green; */
+  height: 100%;                        /* para falta de suporte */  
+  height: -webkit-calc(100% - 7.2rem);  /* para Chrome */
+  height: -moz-calc(100% - 7.2rem);     /* para Firefox */
+  height: calc(100% - 7.2rem);
+  
+  padding-bottom: 3.2rem;/* para suporte nativo */
 }
 
 /* SECTIONS PRODUCtS */
-#products {
-  width: 33.6rem;
-  height: calc(100vh - 22rem);
+.products {
+  /* width: 33.6rem; */
+  /* height: calc(100vh - 22rem); */
   /* white-space: nowrap; */
-  overflow-y: auto;
+  /* border: 1px solid orange; */
+
+  overflow: overlay;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
-  /* border: 1px solid red; */
+  
+  height: 100%;                        /* para falta de suporte */  
+  height: -webkit-calc(100% - 7.4rem);  /* para Chrome */
+  height: -moz-calc(100% - 7.4rem);     /* para Firefox */
+  height: calc(100% - 7.4rem);          /* para suporte nativo */
+
+  margin-top: 3.2rem;
 }
 
-#products::-webkit-scrollbar {
+.products::-webkit-scrollbar {
   display: none;
-  margin-top: 3.2rem;
-}
-
-.section-products + .section-products{
-  margin-top: 3.2rem;
 }
 

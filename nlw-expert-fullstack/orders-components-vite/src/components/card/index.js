@@ -1,14 +1,14 @@
 import './styles.css';
 
-export function Card() {
+export function Card(object) {
   return `
     <dl>
       <dt class="card-item">
-        <img src="../../assets/images/products/thumbnail/1.png" alt="imagem de hamburguer">          
+        <img src="${object.thumbnail}" alt="imagem de hamburguer">          
         
         <div class="card-info">
-          <p class="title">X-React</p>
-          <p>Um hambúrger tão bonito que me deu fome enquanto eu fazia esse layout para o projeto...</p>
+          <p class="title">${object.title}</p>
+          <p>${object.description}</p>
         </div>
       </dt>
     </dl>

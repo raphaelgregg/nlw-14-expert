@@ -1,6 +1,9 @@
 nav {
   width: 100%;
-
+  /* border: 1px solid purple; */
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 nav ul {

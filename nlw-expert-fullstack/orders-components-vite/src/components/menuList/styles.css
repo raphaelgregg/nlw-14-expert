@@ -1,0 +1,21 @@
+/* SECTIONS PRODUCtS */
+.section-products {
+  /* width: 33.2rem; */
+  /* height: 100%; */
+  /* white-space: nowrap; */
+  /* overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; */
+  /* margin-top: 3.2rem; */
+  
+  /* border: 1px solid blue; */
+}
+
+/* .section-products::-webkit-scrollbar {
+  display: none;
+  margin-top: 3.2rem;
+} */
+
+.section-products + .section-products{
+  margin-top: 3.2rem;
+}
