@@ -1,6 +1,6 @@
 import './styles.css';
 
-export function Header() {
+export function Header(handleOpenCard) {
   return `
     <header>
       <div class="header-wrapper">
@@ -8,9 +8,9 @@ export function Header() {
         <h4 class="title">Header</h4>
       </div>
       
-      <div class="bag-shopping">
+      <button class="bag-shopping"onclick='${() => handleOpenCard()}'>
         <img src="./src/assets/svg/shopping-bag.svg" alt="icone de bolsa" /> 
-      </div>
+      </button>
   </header>
   `;
 }

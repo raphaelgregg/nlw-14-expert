@@ -11,10 +11,15 @@ header h4 {
 }
 
 .bag-shopping {
+  background: transparent;
+  border: none;
+  
   position: relative;
   padding: 1.2rem;
 
   transition: opacity .3s;
+
+  cursor: pointer;
 }
 
 .bag-shopping::before {

@@ -7,9 +7,18 @@ import './styles.css';
 import { CATEGORIES, MENU } from '../../utils/data/products.js';
 
 
-export function Home() {  
+export function Home() { 
+  
+  function handleOpenCart() {
+    console.log('envio de função')
+  }
+
+  function handleOpenProduct() {
+    window.location.href="./src/pages/product/index.js";
+  }
+
   return `
-    ${Header()}
+    ${Header(handleOpenCart)}
     
     <div class="line"></div>
     
@@ -17,7 +26,7 @@ export function Home() {
       ${Category(CATEGORIES)}
 
       <div class="products">
-      ${MenuList(MENU)}
+      ${MenuList(MENU, handleOpenProduct)}
       </div>
     </main>
 

@@ -1,11 +1,11 @@
 import { Card } from '../card/index.js';
 import './styles.css';
 
-export function MenuList(object) {
+export function MenuList(object, handleOpenProduct) {
   const sectionList = object.map((item) => {
     
     const card = item.data.map((data) => {
-      return Card(data);
+      return Card(data, handleOpenProduct);
     }).join('');
 
     return `
